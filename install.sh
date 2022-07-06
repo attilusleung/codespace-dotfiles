@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 touch yeet
 
 # Install packages
@@ -11,7 +13,7 @@ fi
 
 # Symlink .config
 for f in config/*; do
-    ln -s $f "~/.config/$(basename $f)"
+    ln -s $f ~/.config/$(basename $f)
 done
 
 # TODO: Shell specific scripts
