@@ -1,5 +1,7 @@
 #!/bin/bash
 
+touch yeet
+
 # Install packages
 if [[ apt -v ]] then
     bash install/apt-install.sh
