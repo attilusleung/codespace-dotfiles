@@ -3,9 +3,9 @@
 touch yeet
 
 # Install packages
-if [ apt -v ] then
+if apt -v; then
     bash install/apt-install.sh
-elif [ pacman -v ] then
+elif pacman -V; then
     bash install/pacman-install.sh
 fi
 

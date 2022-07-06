@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Kitty terminfo for ssh
-apt install kitty-terminfo
+apt install -y kitty-terminfo
