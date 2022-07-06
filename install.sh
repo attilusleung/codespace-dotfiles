@@ -16,7 +16,7 @@ fi
 # Symlink .config
 mkdir -p ~/.config
 for f in config/*; do
-    ln -s $f ~/.config/$(basename $f)
+    ln -s $(pwd)/$f ~/.config/$(basename $f)
 done
 
 # TODO: Shell specific scripts
@@ -26,4 +26,4 @@ echo "alias vim=nvim" >> ~/.bashrc
 echo "alias vim=nvim" >> ~/.zshrc
 
 # Install vim plugins
-nvim -c ":PlugInstall" -c ":qa!"
+nvim --headless -c ":PlugInstall" -c ":qa!"
