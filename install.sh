@@ -4,7 +4,7 @@ set -x
 
 touch yeet
 
-INSTALL=scripts
+INSTALL=install
 
 # Install packages
 if apt -v; then
