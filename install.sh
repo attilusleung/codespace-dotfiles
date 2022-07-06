@@ -4,11 +4,13 @@ set -x
 
 touch yeet
 
+INSTALL=scripts
+
 # Install packages
 if apt -v; then
-    sudo bash install/apt-install.sh
+    sudo bash $INSTALL/apt-install.sh
 elif pacman -V; then
-    sudo bash install/pacman-install.sh
+    sudo bash $INSTALL/pacman-install.sh
 fi
 
 # Symlink .config
