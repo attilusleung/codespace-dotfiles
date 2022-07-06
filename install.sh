@@ -4,9 +4,9 @@ touch yeet
 
 # Install packages
 if apt -v; then
-    bash install/apt-install.sh
+    sudo bash install/apt-install.sh
 elif pacman -V; then
-    bash install/pacman-install.sh
+    sudo bash install/pacman-install.sh
 fi
 
 # Symlink .config
