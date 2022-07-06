@@ -14,6 +14,7 @@ elif pacman -V; then
 fi
 
 # Symlink .config
+mkdir -p ~/.config
 for f in config/*; do
     ln -s $f ~/.config/$(basename $f)
 done
