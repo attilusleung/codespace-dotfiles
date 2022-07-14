@@ -5,5 +5,5 @@ wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.deb
 dpkg -i nvim-linux64.deb
 
 # Kitty terminfo for ssh
-apt update && apt upgrade
+apt update && apt upgrade -y
 apt install -y kitty-terminfo
