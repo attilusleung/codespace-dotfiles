@@ -27,8 +27,8 @@ git config --global pull.rebase true
 echo "alias vim=nvim" >> ~/.bashrc
 echo "alias vim=nvim" >> ~/.zshrc
 
-echo "alias ls=ls --color" >> ~/.bashrc
-echo "alias ls=ls --color" >> ~/.zshrc
+echo "alias ls='ls --color'" >> ~/.bashrc
+echo "alias ls='ls --color'" >> ~/.zshrc
 
 # Install vim plugins
 nvim --headless -c ":PlugInstall" -c ":qa!"
