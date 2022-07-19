@@ -29,6 +29,7 @@ if has("autocmd")
     autocmd FileType text set textwidth=80
     autocmd Filetype markdown set textwidth=80
     autocmd FileType tex set textwidth=80
+    autocmd FileType javascript set ts=2 sts=2 sw=2 tw=80
 endif
 
 " Use 4 spaces for tabs for everything else
