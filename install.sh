@@ -19,6 +19,8 @@ for f in config/*; do
     ln -s $(pwd)/$f ~/.config/$(basename $f)
 done
 
+git config --global pull.rebase true
+
 # TODO: Shell specific scripts
 
 # Hack because I can't be bothered to do this properly
